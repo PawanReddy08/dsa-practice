@@ -1,0 +1,11 @@
+class solution:
+    def count_digits(self,n):
+        count=0
+        while n>0:
+            last_digit=n%10
+            count+=1
+            n=n//10
+        return count
+sol=solution()
+n=12345
+print(sol.count_digits(n))
