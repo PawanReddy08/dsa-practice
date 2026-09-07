@@ -11,5 +11,5 @@ class solution():
         else:
             return False
 obj=solution()
-n=37
+n=371
 print(obj.armstrong(n))
