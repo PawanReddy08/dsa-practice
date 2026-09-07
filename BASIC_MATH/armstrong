@@ -1,0 +1,15 @@
+class solution():
+    def armstrong(self,n):
+        sum=0
+        dup=n
+        while n>0:
+            ld=n%10
+            sum+=(ld*ld*ld)
+            n=n//10
+        if dup==sum:
+            return True
+        else:
+            return False
+obj=solution()
+n=37
+print(obj.armstrong(n))
